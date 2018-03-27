@@ -8,17 +8,17 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
   <style>
-      article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-    display: block;
-}
+      body{
+          background: #303030;
+      }
 
       .navbar{
            
           margin-bottom: 0;
           border-radius: 0;
-          background-color: darkblue;
+          background-color: #212121;
           color: white;
           padding: 1% 0;
           font-size: 1.2em;
@@ -44,7 +44,7 @@ footer, header, hgroup, menu, nav, section {
        .navbar-inverse .navbar-nav .active a:hover{
           
           color: white;
-          background-color: darkblue;
+          background-color: #212121;
       }
 
       /* Make list items on navbar lighter when hovered over. */
@@ -72,6 +72,7 @@ footer, header, hgroup, menu, nav, section {
 
       .container{
           margin: 4% auto;
+          color:white;
       }
 
       #icon{
@@ -82,18 +83,55 @@ footer, header, hgroup, menu, nav, section {
 
       footer{
         width: 100%;
-        background-color: darkblue;
-        padding: 5%;
+        background-color: #212121;
+        padding-top: 2rem;
         color: white;
       }
 
-      .fa{
-        padding: 15px;
-        font-size: 25px;
-        color:white;
+      hr.light{
+          border-top: 1px solid #d5d5d5;
+           width: 75%;
+          margin-top: .8rem;
+          margin-bottom: 1rem;
       }
 
-      .fa:hover{
+      hr.light-100{
+          border-top: 1px;
+           width: 100%;
+          margin-top: .8rem;
+          margin-bottom: 1rem;
+      }
+
+      footer a{
+          color: #d5d5d5;
+      }
+
+      .social a{
+          font-size: 4.5em;
+          padding: 3rem;
+      }
+
+      .fa-facebook{
+          color: #3b5998;
+      }
+
+      .fa-twitter{
+          color:  #00aced;
+      }
+
+      .fa-google-plus-g{
+          color: #dd4b39;
+      }
+
+      .fa-youtube{
+          color: #bb0000;
+      }
+
+       .fa-facebook :hover,
+       .fa-twitter :hover,
+       .fa-google-plus-g :hover,
+       .fa-youtube :hover
+      {
         color: #D5D5D5;
         text-decoration: none;
       }
@@ -102,6 +140,11 @@ footer, header, hgroup, menu, nav, section {
           .fa{
               font-size:20px;
               padding:10px;
+          }
+
+          .social a{
+              font-size: 4em;
+              padding: 2rem;
           }
       }
 
@@ -157,11 +200,7 @@ footer, header, hgroup, menu, nav, section {
         <div class="carousel-inner" role="listbox">
             <div class="item active">
                 <img src="img/carouselPic01.png">
-                <div class="carousel-caption">
-                    <h1>Get to know Moises.</h1>
-                    <br />
-                    <button type="button" class="btn btn-default">Get Started</button>
-                </div>
+                
             </div>                
             <div class="item">
                 <img src="img/carouselPic01.png" />
@@ -182,7 +221,7 @@ footer, header, hgroup, menu, nav, section {
     </div> <!--End Slider-->
 
     <div class="container text-center">
-        <h2>What I do</h2>
+        <h2>Get to See Moises' Work</h2>
         <div class="row">
             <div class="col-sm-4">
                 <img src="img/crocoduck.png" id="icon" />
@@ -241,7 +280,7 @@ footer, header, hgroup, menu, nav, section {
             </div>
         </div>
     </div>
-
+    <!---
     <footer class="container-fluid text-center">
         <div class="row">
             <div class="col-sm-4">
@@ -257,6 +296,31 @@ footer, header, hgroup, menu, nav, section {
             <div class="col-sm-4">
                 <img src="img/crocoduck.png" id="icon">
             </div>
+        </div>
+    </footer>
+        -->
+    <!--Connect-->
+    <div class="container-fluid padding">
+        <div class="row text-center padding">
+            <div class="col-12">
+                <h2>Connect</h2>
+            </div>
+            <div class="col-12 social padding">
+                <a href="https://twitter.com/CrocoduckStudio"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.linkedin.com/in/moisesmartinez1/"><i class="fab fa-linkedin"></i></a>
+                <a href="https://www.youtube.com/channel/UC5pFYM0vtRv15Kao-pAqRBw"><i class="fab fa-youtube"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <!--footer-->
+    <footer class="container-fluid padding">
+        <div class="row text-center">
+                <img src="img/crocoduck.png" id="icon">
+                <hr class="light" />
+                <p>209-679-4874</p>
+                <p>moi.compsci@gmail.com</p>
+            
         </div>
     </footer>
 </body>
